@@ -33,7 +33,7 @@ const ActionCard = ({
 					</Typography>
 					<Typography sx={{ fontSize: "14px" }}>{description}</Typography>
 				</Stack>
-				<PrimaryButton title={buttonTitle} action={() => onClickFunction()}>
+				<PrimaryButton title={buttonTitle} action={onClickFunction}>
 					Add
 				</PrimaryButton>
 			</Stack>

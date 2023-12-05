@@ -13,15 +13,23 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import NewProjectPopup from "../components/NewProjectPopup";
+import NewUserPopup from "../components/NewUserPopup";
 
 const Dashboard = () => {
 	const [projectPopupOpen, setProjectPopupOpen] = useState(false);
+	const [userPopupOpen, setUserPopupOpen] = useState(false);
 
 	const openProjectPopup = () => {
 		setProjectPopupOpen(true);
 	};
 	const closeProjectPopup = () => {
 		setProjectPopupOpen(false);
+	};
+	const openUserPopup = () => {
+		setUserPopupOpen(true);
+	};
+	const closeUserPopup = () => {
+		setUserPopupOpen(false);
 	};
 	return (
 		<>
@@ -60,9 +68,12 @@ const Dashboard = () => {
 							icon={<User size={60} />}
 							title="Add User"
 							description="Invite members to this Space to work on your projects with you."
-							onClickFunction={() => {}}
+							onClickFunction={openUserPopup}
 							buttonTitle={"Add"}
 						/>
+						{userPopupOpen && (
+							<NewUserPopup open={userPopupOpen} handleClose={closeUserPopup} />
+						)}
 						<ActionCard
 							icon={<Bug size={60} />}
 							title="Add Issue"

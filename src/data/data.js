@@ -11,6 +11,16 @@ export const Projects = [
 		projectName: "Investor Portal",
 		projectKey: "ihfo_78",
 	},
+	{
+		id: 3,
+		projectName: "Portfolio Builder",
+		projectKey: "kfwb_834",
+	},
+	{
+		id: 4,
+		projectName: "eWM",
+		projectKey: "ytre_765",
+	},
 ];
 
 export const Issues = [

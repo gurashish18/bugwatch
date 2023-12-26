@@ -41,3 +41,75 @@ export const Issues = [
 		dueDate: "31/11/2023",
 	},
 ];
+export const IssueTypes = [
+	{
+		id: 1,
+		type: "Bug",
+	},
+	{
+		id: 2,
+		type: "New Feature",
+	},
+	{
+		id: 3,
+		type: "Task",
+	},
+	{
+		id: 4,
+		type: "Sub-task",
+	},
+];
+export const Status = [
+	{
+		id: 1,
+		type: "TO DO",
+	},
+	{
+		id: 2,
+		type: "IN PROGRESS",
+	},
+	{
+		id: 3,
+		type: "DONE",
+	},
+];
+export const Users = [
+	{
+		id: 1,
+		name: "Gurashish Singh",
+	},
+	{
+		id: 2,
+		name: "Manav Chugh",
+	},
+	{
+		id: 3,
+		name: "Anuradha Thapa",
+	},
+	{
+		id: 4,
+		name: "Lokesh Pandey",
+	},
+];
+export const Priorities = [
+	{
+		id: 1,
+		level: "Highest",
+	},
+	{
+		id: 2,
+		level: "High",
+	},
+	{
+		id: 3,
+		level: "Medium",
+	},
+	{
+		id: 4,
+		level: "Low",
+	},
+	{
+		id: 5,
+		level: "Lowest",
+	},
+];

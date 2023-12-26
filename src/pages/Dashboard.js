@@ -14,10 +14,12 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import NewProjectPopup from "../components/NewProjectPopup";
 import NewUserPopup from "../components/NewUserPopup";
+import NewIssuePopup from "../components/NewIssuePopup";
 
 const Dashboard = () => {
 	const [projectPopupOpen, setProjectPopupOpen] = useState(false);
 	const [userPopupOpen, setUserPopupOpen] = useState(false);
+	const [issuePopupOpen, setIssuePopupPopen] = useState(false);
 
 	const openProjectPopup = () => {
 		setProjectPopupOpen(true);
@@ -30,6 +32,12 @@ const Dashboard = () => {
 	};
 	const closeUserPopup = () => {
 		setUserPopupOpen(false);
+	};
+	const openIssuePopup = () => {
+		setIssuePopupPopen(true);
+	};
+	const closeIssuePopup = () => {
+		setIssuePopupPopen(false);
 	};
 	return (
 		<>
@@ -78,9 +86,15 @@ const Dashboard = () => {
 							icon={<Bug size={60} />}
 							title="Add Issue"
 							description="Finally, add issues that you would like to work on."
-							onClickFunction={() => {}}
+							onClickFunction={openIssuePopup}
 							buttonTitle={"Add"}
 						/>
+						{issuePopupOpen && (
+							<NewIssuePopup
+								open={issuePopupOpen}
+								handleClose={closeIssuePopup}
+							/>
+						)}
 					</Stack>
 				</Stack>
 				<Stack

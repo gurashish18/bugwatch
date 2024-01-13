@@ -11,6 +11,7 @@ const TopBar = () => {
 			alignItems={"center"}
 			justifyContent={"space-between"}
 			sx={{
+				height: "70px",
 				backgroundColor: "#ffffff",
 				borderBottom: "1px solid #BDBDBD",
 				padding: "0px 10px 0px 10px",

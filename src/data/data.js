@@ -1,5 +1,7 @@
 /** @format */
 
+import { Gauge, Gear, House, ListDashes, Plus } from "@phosphor-icons/react";
+
 export const Projects = [
 	{
 		id: 1,
@@ -111,5 +113,32 @@ export const Priorities = [
 	{
 		id: 5,
 		level: "Lowest",
+	},
+];
+export const SidebarItems = [
+	{
+		id: 1,
+		title: "Home",
+		icon: <House size={30} color={"#ffffff"} />,
+	},
+	{
+		id: 2,
+		title: "Add Issue",
+		icon: <Plus size={30} color={"#ffffff"} />,
+	},
+	{
+		id: 3,
+		title: "Issues",
+		icon: <ListDashes size={30} color={"#ffffff"} />,
+	},
+	{
+		id: 4,
+		title: "Board",
+		icon: <Gauge size={30} color={"#ffffff"} />,
+	},
+	{
+		id: 5,
+		title: "Project Settings",
+		icon: <Gear size={30} color={"#ffffff"} />,
 	},
 ];

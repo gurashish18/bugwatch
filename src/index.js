@@ -7,6 +7,7 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Project from "./pages/Project";
+import AddIssue from "./pages/AddIssue";
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
 	{
 		path: "/project",
 		element: <Project />,
+	},
+	{
+		path: "/add",
+		element: <AddIssue />,
 	},
 ]);
 

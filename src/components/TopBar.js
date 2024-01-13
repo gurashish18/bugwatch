@@ -15,6 +15,10 @@ const TopBar = () => {
 				backgroundColor: "#ffffff",
 				borderBottom: "1px solid #BDBDBD",
 				padding: "0px 10px 0px 10px",
+				position: "fixed",
+				top: 0,
+				left: 0,
+				width: "100%",
 			}}
 		>
 			<Stack direction={"row"} spacing={4}>

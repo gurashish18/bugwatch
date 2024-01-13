@@ -11,6 +11,7 @@ const Sidebar = () => {
 			<Stack
 				sx={{
 					position: "fixed",
+					top: "70px",
 					height: "calc(100vh - 70px)",
 					backgroundColor: "#4CAF93",
 					width: "250px",
